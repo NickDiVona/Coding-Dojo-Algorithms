@@ -1,12 +1,22 @@
 const sumToOne = (num) => {
   let convNum = String(num);
-  if (convNum.length > 1) {
+  let temp = 0;
+
+  if (temp === 0) {
     for (let i = 0; i < convNum.length; i++) {
-      
+      temp += Number(convNum[i]);     
     }
   }
-  
-  console.log(temp);
+
+  if (temp > 9 || convNum > 9) {
+    convNum = 0;
+    temp = String(temp);
+    for (let i = 0; i < temp.length; i++) {
+      convNum += Number(temp[i]);
+    }
+  }
+
+  console.log(convNum);
 };
 
-sumToOne(57);
+sumToOne(55);
