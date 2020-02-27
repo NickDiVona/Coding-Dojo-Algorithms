@@ -1,24 +1,21 @@
 // for
 
 function sigma(num) {
-    var total = 0;
-    for (var i = num; i > 0; i--) {
-        total += i;
-    }
-    console.log(total);
-    return total
+  let total = 0;
+  for (let i = num; i > 0; i--) {
+    total += i;
+  }
+  return total;
 }
-sigma(5)
-
+console.log(sigma(5));
 
 // while
 function sigmaAgain(num) {
-    var total = 0;
-    while (num > 0) {
-        total += num;
-        num --;
-    }
-    console.log(total);
-    return total
+  let total = 0;
+  while (num > 0) {
+    total += num;
+    num--;
+  }
+  return total;
 }
-sigmaAgain(5)
+console.log(sigmaAgain(5));
