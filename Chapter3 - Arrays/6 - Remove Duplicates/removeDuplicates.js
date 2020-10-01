@@ -25,4 +25,4 @@ let fourthTest = ['hello', 'helo', 'world'];
 console.log(removeDuplicates(firstTest)); // expect [1,2,3,4]
 console.log(removeDuplicates(secondTest)); //expect [1,2,3,4]
 console.log(removeDuplicates(thirdTest)); //expect ['hello', 'world']
-console.log(removeDuplicates(fourthTest)); //expect ['hello', 'hello', 'world']
+console.log(removeDuplicates(fourthTest)); //expect ['hello', 'helo', 'world']
