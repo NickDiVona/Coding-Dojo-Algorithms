@@ -17,14 +17,13 @@ function removeNegatives(arr) {
     }
   }
 
-  //uhhhhhhh
   if (negCount !== 0) {
     negCount = 0;
     arr.length -= 1;
     removeNegatives(arr);
-  } else {
-    return arr;
   }
+
+  return arr;
 }
 
 console.log(removeNegatives(someArr));
